@@ -1,0 +1,9 @@
+[out:json][timeout:60];
+(
+  way["water"="reservoir"]({{bbox}});
+  relation["water"="reservoir"]({{bbox}});
+  way["man_made"="dam"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
