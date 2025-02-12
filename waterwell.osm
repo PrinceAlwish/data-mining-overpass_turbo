@@ -1,0 +1,8 @@
+[out:json][timeout:60];
+(
+  node["man_made"="water_well"]({{bbox}});
+  node["man_made"="drinking_water"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
