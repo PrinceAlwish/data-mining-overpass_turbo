@@ -1,0 +1,11 @@
+/*
+This Overpass query retrieves industrial nodes, ways, and areas.
+*/
+(
+  node["landuse"="industrial"]({{bbox}});
+  way["landuse"="industrial"]({{bbox}});
+  relation["landuse"="industrial"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
