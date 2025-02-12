@@ -1,0 +1,7 @@
+[out:json][timeout:60];
+(
+  way["building"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
