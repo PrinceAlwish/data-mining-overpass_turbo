@@ -1,0 +1,11 @@
+/*
+Query to retrieve warehouses (building=warehouse).
+*/
+(
+  node["building"="warehouse"]({{bbox}});
+  way["building"="warehouse"]({{bbox}});
+  relation["building"="warehouse"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
