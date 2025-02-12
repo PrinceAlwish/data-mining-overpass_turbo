@@ -1,0 +1,20 @@
+/*
+Query to retrieve various industrial setups such as power plants, refineries, and mining sites.
+*/
+(
+  node["industry"="power"]({{bbox}});
+  way["industry"="power"]({{bbox}});
+  relation["industry"="power"]({{bbox}});
+  node["industry"="oil"]({{bbox}});
+  way["industry"="oil"]({{bbox}});
+  relation["industry"="oil"]({{bbox}});
+  node["industry"="mining"]({{bbox}});
+  way["industry"="mining"]({{bbox}});
+  relation["industry"="mining"]({{bbox}});
+  node["industry"="refinery"]({{bbox}});
+  way["industry"="refinery"]({{bbox}});
+  relation["industry"="refinery"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
