@@ -1,0 +1,8 @@
+[out:json][timeout:60];
+(
+  way["landuse"="farmland"]({{bbox}});
+  relation["landuse"="farmland"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
