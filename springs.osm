@@ -1,0 +1,7 @@
+[out:json][timeout:60];
+(
+  node["natural"="spring"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
