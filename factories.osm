@@ -1,0 +1,14 @@
+/*
+Query to retrieve factories (building=factory) and industrial land use areas.
+*/
+(
+  node["building"="factory"]({{bbox}});
+  way["building"="factory"]({{bbox}});
+  relation["building"="factory"]({{bbox}});
+  node["landuse"="industrial"]({{bbox}});
+  way["landuse"="industrial"]({{bbox}});
+  relation["landuse"="industrial"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
