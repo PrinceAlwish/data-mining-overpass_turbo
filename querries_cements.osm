@@ -1,0 +1,14 @@
+/*
+Query to retrieve quarries and cement plants.
+*/
+(
+  node["industry"="quarry"]({{bbox}});
+  way["industry"="quarry"]({{bbox}});
+  relation["industry"="quarry"]({{bbox}});
+  node["industry"="cement"]({{bbox}});
+  way["industry"="cement"]({{bbox}});
+  relation["industry"="cement"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
