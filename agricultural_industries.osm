@@ -1,0 +1,14 @@
+/*
+Query to retrieve agricultural industries like farms and food processing facilities.
+*/
+(
+  node["industry"="agriculture"]({{bbox}});
+  way["industry"="agriculture"]({{bbox}});
+  relation["industry"="agriculture"]({{bbox}});
+  node["industry"="food"]({{bbox}});
+  way["industry"="food"]({{bbox}});
+  relation["industry"="food"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
