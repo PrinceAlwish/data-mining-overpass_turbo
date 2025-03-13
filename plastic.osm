@@ -1,0 +1,17 @@
+/*
+Query to retrieve industries related to plastics, such as plastic manufacturing and processing facilities.
+*/
+(
+  node["industry"="plastics"]({{bbox}});
+  way["industry"="plastics"]({{bbox}});
+  relation["industry"="plastics"]({{bbox}});
+  node["product"="plastic"]({{bbox}});
+  way["product"="plastic"]({{bbox}});
+  relation["product"="plastic"]({{bbox}});
+  node["manufacturing"="plastics"]({{bbox}});
+  way["manufacturing"="plastics"]({{bbox}});
+  relation["manufacturing"="plastics"]({{bbox}});
+);
+out body;
+>;
+out skel qt;
